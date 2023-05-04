@@ -13,30 +13,33 @@ function Nav() {
   return (
     <div className='general'>
       <img src={LogoBlock} alt="" />
+      <div className="bars">
+        <div className="barer1"></div>
+        <div className="barer2"></div>
+        <div className="barer3"></div>
+      </div>
       <div className="side">
-          <div className="searchcontainer">
-            <div className="searchee">
-              <img src={search} alt="" />
-              <input type="search"  placeholder='Search for hotel, city, categories'  className='large'/>
-            </div>
-            <div className="suprise">
-              <div className="supone"> <img src={city} alt="" /> City</div>
-              <img src={stroke} alt="" />
-              <div className="supone"> <img src={date} alt="" /> Date</div>
-              <img src={stroke} alt="" />
-              <div className="supone"> <img src={admit} alt="" /> Admit</div>
-            </div>
+        <div className="searchcontainer">
+          <div className="searchee">
+            <img src={search} alt="" />
+            <input type="search"  placeholder='Search for hotel, city, categories'  className='large'/>
           </div>
-          <div className="navigateto">
-            <ul className='notordered'>
-              <li className="lister">Explore</li>
-              <li className="lister">Learn</li>
-              <li className="lister">Support</li>
-              <li className="lister listerone">LIST HOTEL</li>
-              <li className="lister"><img src={tie} alt="#" /></li>
-              <li className="lister"><img src={plus} alt="#" /></li>
-            </ul>
+          <div className="suprise">
+            <div className="supone"> <img src={city} alt="" /> City</div>
+            <img src={stroke} alt="" />
+            <div className="supone"> <img src={date} alt="" /> Date</div>
+            <img src={stroke} alt="" />
+            <div className="supone"> <img src={admit} alt="" /> Admit</div>
           </div>
+        </div>
+        <ul className='notordered'>
+          <li className="lister">Explore</li>
+          <li className="lister">Learn</li>
+          <li className="lister">Support</li>
+          <li className="lister listerone">LIST HOTEL</li>
+          <li className="lister"><img src={tie} alt="#" /></li>
+          <li className="lister"><img src={plus} alt="#" /></li>
+        </ul>
       </div>
     </div>
   )
