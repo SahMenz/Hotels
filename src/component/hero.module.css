@@ -27,6 +27,36 @@
     width: 62vw;
     background-color: #bfbfbf;
 }
+.slidercontainer{
+    border: 1.00776px solid #9B9B9B;
+    border-radius: 14.1086px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding: 10.1551px 15.1939px;
+    width: 90vw;
+    max-width: 270.97px;
+    max-height: 96.6px;
+}
+.names{
+    font-weight: 700;
+    font-size: 16px;
+}
+.ratings{
+    font-weight: 500;
+    font-size: 13px;
+    color: #9B9B9B;
+}
+.placement{
+    position: absolute;
+    right: -15px;
+    top: 9px;
+}
+.slider{
+    display: flex;
+    flex-direction: column;
+}
 @media screen and (min-width:1080px){
     .container{
         padding:60px 40px 0;
