@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Inter:wght@800&family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    font-family: 'Raleway', sans-serif;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+}
+.todaygeneral{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.today{
+    font-style: normal;
+    font-weight: 100;
+    font-size: 7vw;
+    padding-bottom: 10px;
+}
+.shortline{
+    height: 1px;
+    width: 62vw;
+    background-color: #bfbfbf;
+}
+@media screen and (min-width:1080px){
+    .container{
+        padding:60px 40px 0;
+    }
+    .today{
+        font-size: 72px;
+    }
+    .shortline{
+        max-width: 577.96px;
+    }
+}
