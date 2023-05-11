@@ -18,14 +18,18 @@
 }
 .today{
     font-style: normal;
-    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
     font-size: 7vw;
+    font-weight: 100;
     padding-bottom: 10px;
 }
 .shortline{
     height: 1px;
     width: 62vw;
     background-color: #bfbfbf;
+}
+.heroimage{
+    margin: 50px 0;
 }
 .slidercontainer{
     border: 1.00776px solid #9B9B9B;
@@ -35,7 +39,7 @@
     align-items: center;
     position: relative;
     padding: 10.1551px 15.1939px;
-    width: 90vw;
+    width: 85vw;
     max-width: 270.97px;
     max-height: 96.6px;
 }
@@ -55,7 +59,10 @@
 }
 .slider{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 43px;
+    align-items: center;
+    justify-content: center;
 }
 @media screen and (min-width:1080px){
     .container{
@@ -66,5 +73,8 @@
     }
     .shortline{
         max-width: 577.96px;
+    }
+    .slidercontainer{
+        width: 16.436rem;
     }
 }

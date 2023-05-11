@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import LogoBlock from '../images/LogoBlock.svg'
 import '../component/nav.css'
 import tie from '../images/tie.svg'
@@ -10,15 +10,29 @@ import stroke from '../images/stroke.svg'
 import search from '../images/search.svg'
 
 function Nav() {
+
+  const [active, setActive] = useState("side");
+  const [toggleIcon, setToggleIcon] = useState("bars");
+
+  const navToggle = () => {
+    active === "side"
+      ? setActive("side side__active")
+      : setActive("side");
+
+    toggleIcon === "bars"
+      ? setToggleIcon("bars work")
+      : setToggleIcon("bars");
+  }
+  
   return (
     <div className='general'>
       <img src={LogoBlock} alt="" />
-      <div className="bars">
+      <div onClick={navToggle} className={toggleIcon}>
         <div className="barer1"></div>
         <div className="barer2"></div>
         <div className="barer3"></div>
       </div>
-      <div className="side">
+      <div className={active}>
         <div className="searchcontainer">
           <div className="searchee">
             <img src={search} alt="" />
