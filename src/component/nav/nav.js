@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import LogoBlock from '../images/LogoBlock.svg'
-import '../component/nav.css'
-import tie from '../images/tie.svg'
-import plus from '../images/plus.svg'
-import city from '../images/city.svg'
-import date from '../images/date.svg'
-import admit from '../images/admit.svg'
-import stroke from '../images/stroke.svg'
-import search from '../images/search.svg'
+import LogoBlock from '../../images/LogoBlock.svg'
+import '../nav/nav.css'
+import tie from '../../images/tie.svg'
+import plus from '../../images/plus.svg'
+import city from '../../images/city.svg'
+import date from '../../images/date.svg'
+import admit from '../../images/admit.svg'
+import stroke from '../../images/stroke.svg'
+import search from '../../images/search.svg'
 
 function Nav() {
 

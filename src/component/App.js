@@ -1,7 +1,8 @@
 import React from "react";
-import Nav from './nav';
-import Hero from "./hero";
-import Trend from "./trending/trend";
+import Nav from './nav/nav';
+import Hero from "./hero/hero";
+import Trend from "./trend/trend";
+import Footer from "./footer/footer";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <Nav />
         <Hero />
         <Trend />
+        <Footer />
       </div>
   );
 }

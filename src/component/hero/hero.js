@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './hero.module.css'
-import mosque from '../images/mosque.svg'
-import { sliding } from './data.js'
-import Labelnew from '../images/Labelnew.svg'
-import linestroke from '../images/linestroke.svg'
+import mosque from '../../images/mosque.svg'
+import { sliding } from '../data.js'
+import Labelnew from '../../images/Labelnew.svg'
+import linestroke from '../../images/linestroke.svg'
 
 function Hero() {
   return (
@@ -17,7 +17,7 @@ function Hero() {
             <div className={styles.slider}>
               {sliding.map((slider) => (
                 <>
-                  <div className={styles.slidercontainer}>
+                  <div className={styles.slidercontainer} key={slider.id}>
                     <img src={slider.img} alt="" />
                     <img src={linestroke} alt="" />
                     <div className={styles.namesandratings}>

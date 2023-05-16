@@ -89,6 +89,8 @@
     display: none;
     cursor: pointer;
     z-index: 2;
+    margin-top: 20px;
+    margin-right: -5px;
 }
 .lister{
     cursor: pointer;
