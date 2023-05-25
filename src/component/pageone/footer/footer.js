@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './footer.module.css'
-import bigcircle from '../../images/bigcircle.svg'
-import { hotellers } from '../data.js'
+import bigcircle from '../../../images/bigcircle.svg'
+import { hotellers } from '../../data.js'
 
 function Footer() {
   return (
@@ -9,7 +9,7 @@ function Footer() {
       <div className={styles.upper}>
         <div className={styles.upperleft}>
           <div className={styles.have}>
-            Have the <span className={styles.spanner}> Best New </span> Locations sent to you 
+             Have the <span className={styles.spanner}> Best New </span> Locations sent to you 
           </div>
           <form className={styles.subscribe}>
             <input type="email" placeholder='Your Email Address' className={styles.emaill}/>
@@ -22,16 +22,19 @@ function Footer() {
         <div className={styles.lowerupper}>HILLSTOURHOMES</div>
         <div className={styles.lowerlowest}>
           {hotellers.map((differenthotels) => (
-            <div className={styles.hottelss} key={differenthotels.id}>
-              <ul className={styles.notordered}>
-                <li className={styles.listerrss}>{differenthotels.hoteloga}</li>
-                <li className={styles.listerr}>{differenthotels.hotelone}</li>
-                <li className={styles.listerr}>{differenthotels.hoteltwo}</li>
-                <li className={styles.listerr}>{differenthotels.hotelthree}</li>
-                <li className={styles.listerr}>{differenthotels.hotelfour}</li>
-              </ul>
-            </div>
+            // <div className={styles.hottelss} key={differenthotels.id}>
+            <ul className={styles.hottelss} key={differenthotels.id}>
+              <li className={styles.listerrss}>{differenthotels.hoteloga}</li>
+              <li className={styles.listerr}>{differenthotels.hotelone}</li>
+              <li className={styles.listerr}>{differenthotels.hoteltwo}</li>
+              <li className={styles.listerr}>{differenthotels.hotelthree}</li>
+              <li className={styles.listerr}>{differenthotels.hotelfour}</li>
+            </ul>
+            // </div>
           ))}
+        </div>
+        <div className={styles.belowlower}>
+
         </div>
       </div>
     </div>

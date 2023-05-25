@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from './trend.module.css'
-import { trending } from '../data.js'
-import { street } from '../data.js'
-import ratting from '../../images/ratting.svg'
-import invinsibleline from '../../images/invinsibleline.svg' 
-import yellowline from '../../images/yellowline.svg'
+import { trending } from '../../data'
+import { street } from '../../data'
+import ratting from '../../../images/ratting.svg'
+import invinsibleline from '../../../images/invinsibleline.svg' 
+import yellowline from '../../../images/yellowline.svg'
 
 function Trend() {
 

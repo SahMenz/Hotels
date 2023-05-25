@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './hero.module.css'
-import mosque from '../../images/mosque.svg'
-import { sliding } from '../data.js'
-import Labelnew from '../../images/Labelnew.svg'
-import linestroke from '../../images/linestroke.svg'
+import mosque from '../../../images/mosque.svg'
+import { sliding } from '../../data'
+import Labelnew from '../../../images/Labelnew.svg'
+import linestroke from '../../../images/linestroke.svg'
 
 function Hero() {
   return (

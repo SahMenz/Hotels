@@ -229,10 +229,9 @@
     border-radius: 14.2923px;
     height: 379.92px;
     display: flex;
-    position: relative;
-}
-.greenn{
+    margin: auto;
     width: 91vw;
+    position: relative;
 }
 .greenn::before{
     content: "";
@@ -265,6 +264,7 @@
 }
 .bluet, .reddit, .yelloww {
     margin: 20px;
+    margin: auto;
     width: 91vw;
 }
 .citigars{
