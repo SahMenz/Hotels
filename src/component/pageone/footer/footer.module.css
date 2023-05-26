@@ -61,7 +61,7 @@
 } */
 .upper{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
 }
@@ -84,13 +84,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30px;
+    gap: 10px;
 }
 .lowerlowest{
     display: flex;
     width: 65rem;
     align-items: center;
-    /* background-color: green; */
+    background-color: #000;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
@@ -98,6 +98,7 @@
 }
 .container{
     padding-left: 20px;
+    overflow-x: hidden ;
 }
 .lowerupper{
     color: #fff;
@@ -155,9 +156,9 @@
     /* .lowerupper{
         margin-top: 152px;
     } */
-    /* .lower{
-        margin-top: -100px;
-    } */
+    .lower{
+        margin-top: -30px;
+    }
 }
 
 @media only screen and (min-width:1272px){
@@ -165,24 +166,28 @@
         display: block;
         margin-right: -50px;
     }
-    /* .lower{
-        margin-top: -390px;
-        width: 100%;
-        background-color: red;
-        padding-left: 200px;
-        justify-content: center;
-    } */
+    .lower{
+        margin-top: -290px;
+        width: 100vw;
+        /* background-color: red; */
+        /* padding-left: 200px; */
+        /* justify-content: center; */
+    }
     /* .hottelss{
         padding-bottom: 20px;
         height: 180px;
         margin-right:90px;
     } */
-    /* .lowerupper{
-        margin-top: 150px;
+    .lowerupper{
+        margin-top: 79px;
         font-size: 23px;
-    } */
+    }
     .container{
         padding-right: 50px;
+    }
+    .lowerlowest{
+        padding: 90px 50px 90px 0px;
+
     }
     /* .west{
         column-gap: 80px;

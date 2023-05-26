@@ -33,9 +33,9 @@ function Footer() {
             // </div>
           ))}
         </div>
-        <div className={styles.belowlower}>
+        {/* <div className={styles.belowlower}>
 
-        </div>
+        </div> */}
       </div>
     </div>
   )
