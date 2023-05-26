@@ -185,87 +185,23 @@
     margin: 3px 0px 5px 0px;
 }
 .bluet{
-    background-image: url(/src/images/lagos.svg);
-    background-size: cover;
-    max-width: 309.38px;
-    height: 379.92px;
-    display: flex;
-    position: relative;
-    border-radius: 14.2923px;
-}
-.bluet::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.55);
-    border-radius: 14.2923px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/src/images/lagos.svg);
 }
 .reddit{
-    background-image: url(/src/images/calabar.svg);
-    background-size: cover;
-    max-width: 309.38px;
-    height: 379.92px;
-    display: flex;
-    border-radius: 14.2923px;
-    position: relative;
-}
-.reddit::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.55);
-    border-radius: 14.2923px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/src/images/calabar.svg);
 }
 .greenn{
-    background-image: url(/src/images/abuja.svg);
-    background-size: cover;
-    max-width: 309.38px;
-    border-radius: 14.2923px;
-    height: 379.92px;
-    display: flex;
-    margin: auto;
-    width: 91vw;
-    position: relative;
-}
-.greenn::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.55);
-    border-radius: 14.2923px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/src/images/abuja.svg);
 }
 .yelloww{
-    background-image: url(/src/images/oyo.svg); 
-    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/src/images/oyo.svg);
+}
+.bluet, .reddit, .yelloww, .greenn {
     max-width: 309.38px;
+    border-radius: 14.2923px;
     height: 379.92px;
     display: flex;
-    border-radius: 14.2923px;
-    position: relative;
-}
-.yelloww::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.55);
-    border-radius: 14.2923px;
-}
-.bluet, .reddit, .yelloww {
-    margin: 20px;
     margin: auto;
-    width: 91vw;
 }
 .citigars{
     display: flex;
@@ -275,7 +211,7 @@
     justify-content: space-between;
     max-width: 1850px;
     margin: auto;
-    margin-top: 50px;
+    margin: 50px 40px 0px 40px;
 }
 @media screen and (min-width: 786px) {
     .carnivaltwo{
