@@ -22,7 +22,6 @@
 }
 .emaill{
     max-width: 332px;
-    /* padding: 10px; */
     padding: 13.1613px 0px 13.1613px 15px;
     width: 80vw;
     border-radius: 2.63227px;
@@ -56,12 +55,8 @@
     margin-top:70px;
     padding-top: 30px;
 }
-/* div{
-    border: 1px solid green;
-} */
 .upper{
     display: flex;
-    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
 }
@@ -79,7 +74,6 @@
     font-weight: bold;
 }
 .lower{
-    /* background-color: red; */
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -104,35 +98,19 @@
     color: #fff;
     font-weight: bold;
 }
-/* .west{
+.remember{
+    color:#fff;
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
     align-items: center;
-    gap: 50px;
-    justify-content: center;
-    background-color: #000;
-    background-color: red;
-    max-width: 80rem;
-} */
-/* .hottelss{
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    height: 140px;
-} */
-/* .lower{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content:space-between;
-    margin: 0 45px;
-    gap: 40px;
-} */
-/* .lowerupper{
-    color: #fff;
-    margin-bottom: 20px;
-    font-weight: bold;
-} */
+    font-size: 9px;
+}
+.love{
+    color: #ffffff;
+}
 .listerrss, .listerr, .buttonofsubscribe, .lowerupper{
     cursor: pointer;
 }
@@ -146,18 +124,11 @@
     .upperleft{
         margin-top: 70px;
     }
-    /* .west{
-        padding-top: 80px ;
-        margin-top: 80px;
-    } */
-    /* .hottelss{
-        height: 180px;
-    } */
-    /* .lowerupper{
-        margin-top: 152px;
-    } */
     .lower{
         margin-top: -30px;
+    }
+    .remember{
+        font-size: 12px;
     }
 }
 
@@ -169,15 +140,7 @@
     .lower{
         margin-top: -290px;
         width: 100vw;
-        /* background-color: red; */
-        /* padding-left: 200px; */
-        /* justify-content: center; */
     }
-    /* .hottelss{
-        padding-bottom: 20px;
-        height: 180px;
-        margin-right:90px;
-    } */
     .lowerupper{
         margin-top: 79px;
         font-size: 23px;
@@ -187,13 +150,7 @@
     }
     .lowerlowest{
         padding: 90px 50px 90px 0px;
-
     }
-    /* .west{
-        column-gap: 80px;
-        padding-top: 80px;
-        padding-bottom: 80px; 
-    } */
     .upper{
         justify-content: space-between;
         padding-left: 40px;

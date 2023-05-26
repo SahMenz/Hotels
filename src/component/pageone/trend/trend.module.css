@@ -92,7 +92,7 @@
     margin-top: 70px;
 }
 .carnivaltwo{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/src/images/carnival.svg);
+    background: linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.40)), url(/src/images/carnival.svg);
     background-repeat: no-repeat;
     background-size:cover;
     width: 90vw;
@@ -174,16 +174,16 @@
     margin: 3px 0px 5px 0px;
 }
 .bluet{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/src/images/lagos.svg);
+    background: linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.40)), url(/src/images/lagos.svg);
 }
 .reddit{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/src/images/calabar.svg);
+    background: linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.40)), url(/src/images/calabar.svg);
 }
 .greenn{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/src/images/abuja.svg);
+    background: linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.40)), url(/src/images/abuja.svg);
 }
 .yelloww{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/src/images/oyo.svg);
+    background: linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.40)), url(/src/images/oyo.svg);
 }
 .bluet, .reddit, .yelloww, .greenn {
     max-width: 309.38px;

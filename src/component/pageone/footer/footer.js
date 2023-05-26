@@ -22,7 +22,6 @@ function Footer() {
         <div className={styles.lowerupper}>HILLSTOURHOMES</div>
         <div className={styles.lowerlowest}>
           {hotellers.map((differenthotels) => (
-            // <div className={styles.hottelss} key={differenthotels.id}>
             <ul className={styles.hottelss} key={differenthotels.id}>
               <li className={styles.listerrss}>{differenthotels.hoteloga}</li>
               <li className={styles.listerr}>{differenthotels.hotelone}</li>
@@ -30,12 +29,13 @@ function Footer() {
               <li className={styles.listerr}>{differenthotels.hotelthree}</li>
               <li className={styles.listerr}>{differenthotels.hotelfour}</li>
             </ul>
-            // </div>
           ))}
         </div>
-        {/* <div className={styles.belowlower}>
-
-        </div> */}
+      </div>
+      <div className={styles.remember}>
+        <small className={styles.smallerone}>&copy; 2023 Hillstourhomes . All rights reserved</small>
+        <small className={styles.smallertwo}>Some hotels require you to cancel more than 24 hours before check-in.<a href='#' className={styles.love}> Details on site. </a></small>
+        <small className={styles.smallerthree}>Site Designed by Inclusive <sup>+</sup> </small>
       </div>
     </div>
   )
