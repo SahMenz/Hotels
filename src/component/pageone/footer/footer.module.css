@@ -114,6 +114,9 @@
 .listerrss, .listerr, .buttonofsubscribe, .lowerupper{
     cursor: pointer;
 }
+.remember{
+    padding: 8px;
+}
 @media only screen and (min-width:765px){
     .have{
         font-size: 51px;

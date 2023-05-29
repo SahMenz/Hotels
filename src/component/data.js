@@ -7,11 +7,7 @@ import Luxury from '../images/luxury.svg'
 import solo from '../images/solo.svg'
 import blue from '../images/blue.svg'
 import caving from '../images/caving.svg'
-// import lagos from '../images/lagos.svg'
-// import calabar from '../images/calabar.svg'
-// import abuja from '../images/abuja.svg'
-// import oyo from '../images/oyo.svg'
-// import yellowline from '../images/yellowline.svg'
+import empty from '../images/empty.svg'
 
 
 export const sliding = [
@@ -152,4 +148,22 @@ export const hotellers = [
         hotelfour:"Garvah",
     },
 
+]
+
+export const dynamically = [
+    {
+        id:123456,
+        writeup:"Lorem ipsum dolor sit amet consectetur. At quam ac urna consequat. Et volutpat velit ultrices ut porta massa non. Mi aenean et posuere convallis. Eu blandit amet neque sit ullamcorper pharetra ultricies.Ipsum lorem non vitae risus facilisis aliquet ultricies convallis suspendisse. Aliquet mi rhoncus tortor fames purus purus. Habita.",
+        img: empty ,
+        styling: "moveer",
+        stylesknown:"contin"
+    },
+
+    {
+        slidee:54321,
+        writeup:"Lorem ipsum dolor sit amet consectetur. At quam ac urna consequat. Et volutpat velit ultrices ut porta massa non. Mi aenean et posuere convallis. Eu blandit amet neque sit ullamcorper pharetra ultricies. Ipsum lorem non vitae risus facilisis aliquet ultricies convallis suspendisse. Aliquet mi rhoncus tortor fames purus purus. Habita.",
+        img:empty,
+        styling: "moer",
+        stylesknown:"contiin"
+    }
 ]
