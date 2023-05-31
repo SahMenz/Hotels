@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Inter:wght@800&family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.general{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 40px;
+}
+.head{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13vw;
+}
+.parag{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7vw;
+    color: #9B9B9B;
+    padding: 10px 0 20px 0;
+}
+.inputter{
+    width: 80vw;
+    height: 17vw;
+    padding: 20px;
+    border: 1px solid #9B9B9B;
+    border-radius: 11px 0px 0px 11px;
+    outline: none;
+}
+.ownbackground{
+    background-color: #FFB901;
+    display: grid;
+    place-items: center;
+    width: 20vw;
+    height: 17vw;
+    border-radius: 0px 11px 11px 0px;
+}
+.divcontainer{
+    display: flex;
+    max-width: 670px;
+}
+.hellosearch{
+    max-width: 671px;
+}
+.twopic{
+    position: relative;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: none;
+}
+.storeybackground{
+    position: absolute;
+    top: 120px;
+    left: 140px;
+    z-index: -1;
+}
+@media screen and (min-width: 568px) {
+    .head{
+        font-size: 72px;
+    }
+    .parag{
+        font-size: 36px;
+    }
+    .inputter{
+        width: 530px;
+        height: 88px;
+    }
+    .ownbackground{
+        height: 88px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .ownbackground{
+        width: 145px;
+    }
+}
+@media screen and (min-width: 1330px) {
+    .general{
+        justify-content: flex-start;
+        align-items: center;
+        padding: 40px;
+        margin-top: 50px;
+    }
+    .twopic{
+        display: block;
+    }
+    .hellosearch{
+        margin: auto;
+        margin-right: 30px;
+    }
+}
