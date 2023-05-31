@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Inter:wght@800&family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+*, *::before *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.general{
+    font-family: 'Raleway', sans-serif;
+}
+
+.titless{
+    font-weight: 200;
+    font-size: 5vw;
+    margin-bottom: 20px;
+}
+.ournumbers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content{
+    max-width: 330px;
+    font-size: 4.2vw;
+}
+.combination{
+    padding: 20px;
+    text-align: center;
+}
+.dollars{
+    font-weight: 600;
+    font-size: 7vw;
+    margin-bottom: 20px;
+}
+.dollarsign{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.general{
+    background-color: #F6F6F6;
+    margin-top: 110px;
+    margin-bottom: -70px;
+    padding: 10px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.foundedbyone{
+    font-weight: 400;
+    font-size: 6.5vw;
+}
+.foundedbytwo{
+    font-weight: 100;
+    font-size: 5vw;
+    margin: 20px 0 ;
+}
+.foundedbythree{
+    font-family: 'Herr Von Muellerhoff', sans-serif;
+    font-weight: 400;
+    font-size: 9vw;
+    color: #ffb901;
+}
+.foundedby{
+    text-align: center;
+    margin-top: 50px;
+    /* align-self: center; */
+    max-width: 588px;
+}
+.bigimage{
+    display: none;
+}
+.founder{
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin: auto;
+}
+@media screen and (min-width: 494px){
+    .titless{
+        font-size: 25px;
+    }
+    .content{
+        font-size: 18px;
+    }
+    .dollars{
+        font-size: 51px;
+    }
+    .titless{
+        margin-bottom: 40px;
+    }
+    .foundedbyone{
+        font-size: 26.775px;
+    }
+    .foundedbytwo{
+        font-size: 25px;
+    }
+    .foundedbythree{
+        font-size: 51px;
+    }
+    .foundedby{
+        margin: auto;
+    }
+    .founder{
+        margin-top: 100px;
+    }
+}
+@media screen and (min-width: 1294px){
+    .dollarsign{
+        justify-content: space-between;
+        padding: 0px 30px;
+    }
+    .general{
+        margin-top: 210px;
+        padding-top: 100px;
+    }
+    .bigimage{
+        display:block;
+        align-self: flex-end;
+        margin-right: -10px;
+    }
+    .foundedby{
+        margin: 0;
+    }
+    .founder{
+        margin-bottom: -40px;
+        margin-top: 100px;
+    }
+}

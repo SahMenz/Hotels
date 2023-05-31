@@ -167,3 +167,21 @@ export const dynamically = [
         stylesknown:"contiin"
     }
 ]
+
+export const numberofpeople = [
+    {
+        id:12345678,
+        dollars:"$34K",
+        texts:"Lorem ipsum dolor sit amet consectetur. Id iaculis mauris cursus sit venenatis hendrerit. Mattis pulvinar aliquam dapibus convallis volutpat. "
+    },
+    {
+        id:12678,
+        dollars:"$34K",
+        texts:"Lorem ipsum dolor sit amet consectetur. Id iaculis mauris cursus sit venenatis hendrerit. Mattis pulvinar aliquam dapibus convallis volutpat morbi turpis. Elemen"
+    },
+    {
+        id:15678,
+        dollars:"$34K",
+        texts:"Lorem ipsum dolor sit amet consectetur. Id iaculis mauris cursus sit venenatis hendrerit. Mattis pulvinar aliquam dapibus convallis volutpat morbi turpis.."
+    }
+]
