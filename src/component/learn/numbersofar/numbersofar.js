@@ -11,7 +11,6 @@ function Numbersofar({numbers}) {
           {numbers.map(item => (
             <div className={styles.combination}>
               <div className={styles.dollars}>{item.dollars}</div>
-              {/* <img src={Line} alt="" /> */}
               <div className={styles.content}>{item.texts}</div>
             </div>
           ))}

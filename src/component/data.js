@@ -185,3 +185,38 @@ export const numberofpeople = [
         texts:"Lorem ipsum dolor sit amet consectetur. Id iaculis mauris cursus sit venenatis hendrerit. Mattis pulvinar aliquam dapibus convallis volutpat morbi turpis.."
     }
 ]
+
+export const articles = [
+    {
+        question: "HOW TO GET STARTED",
+        review: " Learn how to make the best of Hillstourhomes. This article puts you up to speed wuth the best practices",
+    },
+    {
+        question: "HOW TO GET STARTED",
+        review: " Learn how to make the best of Hillstourhomes. This article puts you up to speed wuth the best practices",
+    },
+    {
+        question: "HOW TO GET STARTED",
+        review: " Learn how to make the best of Hillstourhomes. This article puts you up to speed wuth the best practices",
+    },
+    {
+        question: "HOW TO GET STARTED",
+        review: " Learn how to make the best of Hillstourhomes. This article puts you up to speed wuth the best practices",
+    },
+    {
+        question: "HOW TO GET STARTED",
+        review: " Learn how to make the best of Hillstourhomes. This article puts you up to speed wuth the best practices",
+    },
+    {
+        question: "HOW TO GET STARTED",
+        review: " Learn how to make the best of Hillstourhomes. This article puts you up to speed wuth the best practices",
+    },
+    {
+        question: "HOW TO GET STARTED",
+        review: " Learn how to make the best of Hillstourhomes. This article puts you up to speed wuth the best practices",
+    },
+    {
+        question: "HOW TO GET STARTED",
+        review: " Learn how to make the best of Hillstourhomes. This article puts you up to speed wuth the best practices",
+    }
+]

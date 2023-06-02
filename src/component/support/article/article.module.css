@@ -5,3 +5,57 @@
     padding: 0;
     box-sizing: border-box;
 }
+.general{
+    font-family: 'Raleway', sans-serif;
+    background-color:#F6F6F6;
+    margin-top: 40px;
+    padding-top: 50px;
+}
+.see{
+    font-weight: 100;
+    font-size: 10vw;
+    text-align: center;
+}
+.bottomline{
+    background-color: #9B9B9B;
+    width: 39vw;
+    margin: auto;
+    height: 1px;
+    margin-top: 20px;
+}
+.hower{
+    font-weight: 500;
+    max-width: 220px;
+    font-size: 19px;
+}
+.learnhow{
+    font-weight: 300;
+    max-width: 284px;
+    font-size: 15px;
+}
+.testify{
+    max-width: 284px;
+    height: 108px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    /* padding: 20px; */
+}
+.helper{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+@media screen and (min-width: 468px) {
+    .general{
+        padding-top: 70px;
+    }
+    .see{
+        font-size: 51px;
+    }
+    .bottomline{
+        width: 396px;
+    }
+}
