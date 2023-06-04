@@ -5,11 +5,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+.general{
     font-family: 'Raleway', sans-serif;
     background-color:#F6F6F6;
     margin-top: 40px;
-    padding-top: 50px;
+    padding: 10px;
+    padding-top: 80px;
 }
 .see{
     font-weight: 100;
@@ -30,11 +31,9 @@
     margin-bottom: 20px;
 }
 .learnhow{
-    font-weight: 300;
     max-width: 284px;
-    font-size: 15px;
     font-weight: 300;
-font-size: 15px;
+    font-size: 15px;
     line-height: 24px;
 }
 .displayy, .normal{
@@ -47,6 +46,7 @@ font-size: 15px;
     padding-bottom: 30px;
     border: 0.2px solid #9B9B9B;
     height:268px;
+    cursor: pointer;
 }
 .helper{
     max-width: 1378px;
@@ -56,10 +56,47 @@ font-size: 15px;
     margin: auto;
     border-right: none;
 }
-
+.genpara{
+    font-weight: 400;
+    font-size: 4vw;
+    margin-bottom: 20px;
+}
+.genpatwo{
+    font-weight: 400;
+    font-size: 7vw;
+}
+.generalonefirst{
+    border: 0.1px solid #9b9b9b;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    margin: auto;
+    height: 50vw;
+    padding: 30px;
+    max-height: 250px;
+    cursor: pointer;
+    width: 467px;
+}
+.ame{
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+}
+.generalone{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+}
+.helpertitle{
+    margin-bottom: 50px;
+}
 @media screen and (min-width: 468px) {
-    .container{
-        padding-top: 70px;
+    .general{
+        padding-top: 100px;
+    }
+    .generalonefirst{
+        width: 467px;
     }
     .see{
         font-size: 51px;
@@ -70,6 +107,15 @@ font-size: 15px;
     .displayy, .normal{
         padding: 20px;
     }
+    .genpara{
+        font-size: 18px;
+    }
+    .genpatwo{
+        font-size: 36px;
+    }
+    .helpertitle{
+        margin-bottom: 110px;
+    }
 }
 @media screen and (min-width: 1299px){
     .displayy, .normal{
@@ -77,5 +123,10 @@ font-size: 15px;
     }
     .displayy{
         border-right: none;         
+    }
+}
+@media screen and (min-width: 1402px){
+    .generalone{
+        width:1401px;
     }
 }
