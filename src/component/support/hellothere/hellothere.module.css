@@ -43,6 +43,7 @@
 .divcontainer{
     display: flex;
     max-width: 670px;
+    /* width: 100%; */
 }
 .hellosearch{
     max-width: 671px;
@@ -67,7 +68,6 @@
         font-size: 36px;
     }
     .inputter{
-        width: 530px;
         height: 88px;
     }
     .ownbackground{

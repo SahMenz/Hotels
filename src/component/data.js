@@ -190,33 +190,67 @@ export const articles = [
     {
         question: "HOW TO GET STARTED",
         review: " Learn how to make the best of Hillstourhomes. This article puts you up to speed wuth the best practices",
+        styless:"normal",
+        random:"98234"
     },
     {
         question: "HOW TO GET STARTED",
         review: " Learn how to make the best of Hillstourhomes. This article puts you up to speed wuth the best practices",
+        styless:"normal",
+        random:"922s"
     },
     {
         question: "HOW TO GET STARTED",
         review: " Learn how to make the best of Hillstourhomes. This article puts you up to speed wuth the best practices",
+        styless:"normal",
+        random:"9bd34"
     },
     {
         question: "HOW TO GET STARTED",
         review: " Learn how to make the best of Hillstourhomes. This article puts you up to speed wuth the best practices",
+        styless:"displayy",
+        random:"98ddi"
     },
     {
         question: "HOW TO GET STARTED",
         review: " Learn how to make the best of Hillstourhomes. This article puts you up to speed wuth the best practices",
+        styless:"normal",
+        random:"9edd4"
     },
     {
         question: "HOW TO GET STARTED",
         review: " Learn how to make the best of Hillstourhomes. This article puts you up to speed wuth the best practices",
+        styless:"normal",
+        random:"ss823"
     },
     {
         question: "HOW TO GET STARTED",
         review: " Learn how to make the best of Hillstourhomes. This article puts you up to speed wuth the best practices",
+        styless:"normal",
+        random:"9hr4"
     },
     {
         question: "HOW TO GET STARTED",
         review: " Learn how to make the best of Hillstourhomes. This article puts you up to speed wuth the best practices",
+        styless:"displayy",
+        random:"grfj9"
     }
+]
+
+export const hillstour = [
+    {
+        learn:"MAKE THE MOST OF ",
+        how:"HILLSTOURHOMES",
+        keypad:"qwear"
+    },
+    {
+        learn:"LEARN ABOUT YOUR",
+        how:"ACCOUNTS",
+        keypad:"dvkoi"
+    },
+    {
+        learn:"HOW DO I ",
+        how:"GET PAID",
+        keypad:"swdq"
+    },
 ]
