@@ -254,3 +254,30 @@ export const hillstour = [
         keypad:"swdq"
     },
 ]
+
+export const hotelquestions = [
+    {
+        id:"pro024",
+        thequestions:"How can I make money from listing my Hotel?",
+    },
+    {
+        id:"feeo",
+        thequestions:"How can I make money from listing my Hotel?",
+    },
+    {
+        id:"22ow",
+        thequestions:"How can I make money from listing my Hotel?",
+    },
+    {
+        id:"ti04",
+        thequestions:"How can I make money from listing my Hotel?",
+    },
+    {
+        id:"prov302",
+        thequestions:"How can I make money from listing my Hotel?",
+    },
+    {
+        id:"122q",
+        thequestions:"How can I make money from listing my Hotel?",
+    },
+]
