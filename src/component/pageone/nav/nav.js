@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 import LogoBlock from '../../../images/LogoBlock.svg'
 import '../nav/nav.css'
 import tie from '../../../images/tie.svg'
@@ -47,9 +48,9 @@ function Nav() {
           </div>
         </div>
         <ul className='notordered'>
-          <li className="lister">Explore</li>
-          <li className="lister">Learn</li>
-          <li className="lister">Support</li>
+          <li className="lister"><Link to='/explore' className="explorer">Explore</Link></li>
+          <li className="lister"><Link to='/learn' className="explorer">Learn</Link></li>
+          <li className="lister"><Link to='/support' className="explorer">Support</Link></li>
           <li className="lister listerone">LIST HOTEL</li>
           <li className="lister"><img src={tie} alt="#" /></li>
           <li className="lister"><img src={plus} alt="#" /></li>

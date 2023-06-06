@@ -95,6 +95,13 @@
 .lister{
     cursor: pointer;
 }
+.explorer{
+    text-decoration: none;
+    color: #000;
+}
+.explorer:active{
+    color: blue;
+} 
 @media screen and (max-width:1180px) {
     .searchcontainer{
         flex-direction: column;
