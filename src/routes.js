@@ -1,3 +1,4 @@
+import React from "react";
 import Apptrying from "./component/pageone/homecompiler/homecompiler";
 import Learncompiler from "./component/learn/learncompiler/learncompiler";
 import Supportcompiler from "./component/support/supportcompiler/supportcompiler";
