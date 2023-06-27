@@ -104,15 +104,12 @@
 } 
 .listerone:hover{
     background-color: #ffe601;
-    font-size: 15px;
     color: #000;
     transition: all 0.5s ease-in-out;
 }
 .explorer:hover{
-    font-size: 20px;
-    transition: all 0.5s ease-in-out;
-    color: #000;
-    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    color: #ffb901;
 } 
 @media screen and (max-width:1180px) {
     .searchcontainer{
@@ -128,7 +125,6 @@
         width: 30vw;
     }
     .side{
-        /* background-color: #907853; */
         background-color: #ffb901;
         position: fixed;
         top: 5vh;

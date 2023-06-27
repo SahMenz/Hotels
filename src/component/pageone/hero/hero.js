@@ -20,7 +20,7 @@ function Hero() {
                   <div className={styles.slidercontainer} key={slider.id}>
                     <img src={slider.img} alt="" />
                     <img src={linestroke} alt="" />
-                    <div className={styles.namesandratings}>
+                    <div className={styles.namesandratings}  key={slider.id}>
                       <div className={styles.names}>{slider.hotelname}</div>
                       <div className={styles.ratings}>{slider.hotelratings}</div>
                     </div>
