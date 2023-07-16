@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import LogoBlock from '../../../images/LogoBlock.svg'
 import '../nav/nav.css'
 import tie from '../../../images/tie.svg'
@@ -48,10 +48,10 @@ function Nav() {
           </div>
         </div>
         <ul className='notordered'>
-          <li className="lister"><Link to='/explore' className="explorer">Explore</Link></li>
-          <li className="lister"><Link to='/learn' className="explorer">Learn</Link></li>
-          <li className="lister"><Link to='/support' className="explorer">Support</Link></li>
-          <li className="lister listerone">LIST HOTEL</li>
+          <li className="lister"><NavLink to='/explore' className="explorer">Explore</NavLink></li>
+          <li className="lister"><NavLink to='/learn' className="explorer">Learn</NavLink></li>
+          <li className="lister"><NavLink to='/support' className="explorer">Support</NavLink></li>
+          <NavLink to='/login' className="explorer"><li className="lister listerone">Log in</li></NavLink>
           <li className="lister"><img src={tie} alt="#" /></li>
           <li className="lister"><img src={plus} alt="#" /></li>
         </ul>

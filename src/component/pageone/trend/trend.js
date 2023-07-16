@@ -9,23 +9,56 @@ import axios from 'axios'
 import Lottie from 'lottie-web'
 
 const options = {
-  method: 'GET',
-  url: 'https://booking-com.p.rapidapi.com/v1/hotels/reviews-filter-metadata',
-  params: {
-    locale: 'en-gb',
-    hotel_id: '1676161'
-  },
-  headers: {
-    'X-RapidAPI-Key': '1c9c7952afmshe51822e3292d43fp1e0773jsncae69c859c83',
-    'X-RapidAPI-Host': 'booking-com.p.rapidapi.com'
-  }
-};
+    method: 'GET',
+    url: 'https://booking-com.p.rapidapi.com/v1/hotels/photos',
+    params: {
+      hotel_id: '1377073',
+      locale: 'en-gb'
+    },
+    headers: {
+      'X-RapidAPI-Key': '78805369d9msh55cbfdada2e8a3cp1f669fjsn1153c62eaafa',
+      'X-RapidAPI-Host': 'booking-com.p.rapidapi.com'
+    }
+  };
 
 function Trend() {
+
+  // const [loadimages, setLadimages] = useState([])
+
+  // useEffect(() => {
+  //   fetch('https://booking-com.p.rapidapi.com/v1/hotels/photos')
+  //   .then(response => response.json())
+  //   .then(data => setLadimages( data ))
+  //   .catch(err => console.log(err))
+  // }, [])
 
   const [rapidHotels, setRapidHotels] = useState()
 
   const container = useRef(null)
+
+  // useEffect(() => {
+  //   const handlehotels = () => {
+  //     const options = {
+  //       method: 'GET',
+  //       url: 'https://booking-com.p.rapidapi.com/v1/hotels/photos',
+  //       params: {
+  //         hotel_id: '1377073',
+  //         locale: 'en-gb'
+  //       },
+  //       headers: {
+  //         'X-RapidAPI-Key': '78805369d9msh55cbfdada2e8a3cp1f669fjsn1153c62eaafa',
+  //         'X-RapidAPI-Host': 'booking-com.p.rapidapi.com'
+  //       }
+  //     };
+      
+  //     try {
+  //       const response = axios.request(options);
+  //       console.log(response.data);
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  //   }
+  // },[])
 
   useEffect(() => {
     myfunc()
@@ -52,12 +85,18 @@ function Trend() {
       console.error(error);
     }
   }
+  
 
   if(rapidHotels){
     return (
       <>
       <div className={styles.containerss}>
         <div className={styles.containerchild}>
+          {/* <div>
+            {loadimages.map((list, index)=> (
+                <div key={index}>{list.id} | {list.name}</div>
+            ))}
+          </div> */}
           <div  className={styles.listing}>
             <p className={styles.seen}>SEE WHAT IS HOT </p>
             <p className={styles.whatis}>TRENDING</p>

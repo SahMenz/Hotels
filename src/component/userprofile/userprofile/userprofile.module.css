@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Inter:wght@800&family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.general{
+    background-image: url(/src/images/banner.png);
+    height: 30vw;
+    max-height: 350px;
+    margin: auto;
+    position: relative;
+    font-family: 'Raleway', sans-serif ;
+}
+.avatarprofile{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    border: 5px solid #A5A58D;
+}
+.avatarprofilecontainer{
+    position: absolute;
+    left: auto;
+    top: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+.avatarcredentialsnames{
+    text-align: center;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.phonenumber{
+    margin: 5px 0px 20px 0px;
+    color: #6C6C6C;
+    font-size: 9vw;
+}
+.usersname{
+    font-size: 14vw;
+    color: #000;
+}
+.Paststays{
+    max-width: 391px;
+    color: #6C6C6C;
+    font-weight: 400;
+    font-size: 5vw;
+}
+.gmail{
+    color: #6C6C6C;
+}
+@media screen and (min-width: 788px) and (max-width:1542px) {
+    .avatarprofilecontainer{
+        top: 17vw;
+    }
+}
+@media screen and (min-width: 388px) {
+    .phonenumber{
+        font-size: 24px;
+    }
+    .usersname{
+        font-size: 48px;
+    }
+    .Paststays{
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Inter:wght@800&family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.settingprofileform{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 20px;
+}
+.avatarcredentialsnames{
+    text-align: center;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.usersname{
+    font-size: 14vw;
+    color: #000;
+}
+.gmail{
+    color: #6C6C6C;
+}
+.phonenumber{
+    margin: 5px 0px 20px 0px;
+    color: #6C6C6C;
+    font-size: 9vw;
+}
+.avatarprofile{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    border: 5px solid #A5A58D;
+}
+.avatarprofilecontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.avatarupload{
+    border-radius: 10px;
+    background: #6B705C;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #f3f3f3;
+    font-size: 9vw;
+    cursor: pointer;
+}
+.settingform{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+input[type="number"],
+input[type="email"],
+input[type="text"]{
+    display: block;
+    min-width:200px;
+    width: 30vw;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+.dividednames{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 645px;
+}
+.settingheaders{
+    display: flex;
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 15px;
+    justify-content: space-between;
+    max-width: 645px;
+    margin-bottom: 20px;
+}
+.savebutton{
+    margin-left: 10px;
+    color: #FAFAFA;
+}
+.savebutton, .cancelbutton{
+    padding: 10px;
+    background-color: #A5A58D;
+    border: none;
+    border-radius: 7px;
+}
+.cancelbutton{
+    background-color: #FAFAFA;
+    color: #6C6C6C;
+    border: 1px solid #6C6C6C;
+}
+.formfilling{
+    margin-top: 40px;
+}
+.dividednameone{
+    margin-right: 20px;
+}
+@media screen and (min-width: 788px) and (max-width:1542px) {
+    .avatarprofilecontainer{
+        top: 17vw;
+    }
+}
+@media screen and (min-width: 388px) {
+    .phonenumber{
+        font-size: 24px;
+    }
+    .usersname{
+        font-size: 48px;
+    }
+    .avatarupload{
+        font-size: 24px;
+    }
+}
