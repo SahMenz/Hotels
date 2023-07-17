@@ -12,6 +12,7 @@ const routes = [
     { path: '/explore', element: <Apptrying />, errorElement: <Error></Error>},
     // { path: '/explore', element: <Userprofile />, errorElement: <Error></Error>},
     { path: '/login', element: <Userprofile />, errorElement: <Error></Error>},
+    { path: '/account', element: <Userprofile />, errorElement: <Error></Error>},
     { path: '/settings', element: <Usersetting />, errorElement: <Error></Error>},
     { path: '/learn', element: <Learncompiler />},
     { path: '/support', element: <Supportcompiler />},

@@ -99,6 +99,7 @@ input[type="text"]{
     background-color: #A5A58D;
     border: none;
     border-radius: 7px;
+    cursor: pointer;
 }
 .cancelbutton{
     background-color: #FAFAFA;
