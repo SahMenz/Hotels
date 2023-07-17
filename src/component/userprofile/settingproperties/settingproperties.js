@@ -41,7 +41,7 @@ function Settingproperties() {
                     fontSize={'2rem'} 
                     color={'#6B705C'}
                     /> 
-                   { changetext }</h3>
+                   { inputtext }</h3>
             </div>
             <div className={Styles.avatarupload}>Upload new avatar</div>
         </div>
@@ -79,7 +79,7 @@ function Settingproperties() {
                             BASIC INFO
                             <div className={Styles.bottomm}>
                                 <input type="reset"  value="CANCEL" className={Styles.cancelbutton} />
-                                <input type="submit" disabled={isSubmitting} value="SAVE" className={Styles.savebutton} />
+                                <input type="submit" disabled={isSubmitting} value="SAVE" onClick={handlesubmit} className={Styles.savebutton} />
                             </div>
                         </div>
         
@@ -105,7 +105,7 @@ function Settingproperties() {
         
                         <label for="phonenumber">PHONE NUMBER</label>
                         {/* <input type="number" name="phonenumber" id="phone" required/> */}
-                        <Field type="number" onChange={ handlesubmit } name="phonenumber"/>
+                        <Field type="number" onChange={(event) => setInputtext(event.target.value)} name="phonenumber"/>
                         <ErrorMessage name="phonenumber" />
                     </form>
                 )}
