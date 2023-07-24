@@ -1,24 +1,55 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Styles from '../settingproperties/settingproperties.module.css'
 import IconsReactjs  from 'icons-reactjs';
 // import nikelogo from '../../../images/nikelogo.png'
 import { useFormik } from 'formik';
 
+
+const initialValues = {
+    firstname: '',
+    surname: '',
+    formEmail: '',
+    formPhone: '',
+}
+
+const onSubmit = values => {
+    console.log('Form data', values)
+}
+
+const validate = values => {
+    let errors = {}
+    
+    if(!values.firstname){
+        errors.firstname = 'Required'
+    }
+
+    if(!values.surname){
+        errors.surname = 'Required'
+    }
+    
+    if(!values.formEmail){
+        errors.formEmail = 'Required'
+    } else if(!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.formEmail)) {
+        errors.formEmail = 'Invalid email format'
+    }
+
+    if(!values.formPhone){
+        errors.formPhone = 'Required'
+    }
+
+    return errors
+}
+
+
 function Settingproperties() {
 
     const formik = useFormik ({
-        initialValues: {
-            firstname: 'wer',
-            surname: '',
-            formEmail: '',
-            formPhone: '',
-        },
-        onSubmit: values => {
-            console.log('Form data', values)
-        }
+        initialValues,
+        onSubmit,
+        validate
     })
 
-    // console.log('From values:', formik.values)
+    console.log('visited fields:', formik.touched)
 
   return (
     <div className={Styles.settingprofileform}>
@@ -107,16 +138,20 @@ function Settingproperties() {
                 
                 
                 <div className={Styles.dividednames}>
-                    <div className={Styles.dividednameone}>
+                    <div  >
                         <label htmlFor="firstname">FIRST NAME</label>
                         <input 
                             type="text" 
                             id="firstname" 
                             name='firstname' 
                             placeholder="firstname" 
-                            onChange={formik.handleChange} 
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
                             value={formik.values.firstname}
                         />
+                        { formik.touched.firstname && formik.errors.firstname ? (
+                            <div className={Styles.error}>{formik.errors.firstname}</div>
+                        ) : null}
                     </div>
                     <div className={Styles.dividednametwo}>
                         <label htmlFor="surname">LAST NAME</label>
@@ -125,31 +160,48 @@ function Settingproperties() {
                             id="surname" 
                             name='surname' 
                             placeholder="surname" 
-                            onChange={formik.handleChange} 
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
                             value={formik.values.surname} 
                         />
+                        { formik.touched.surname && formik.errors.surname ? (
+                            <div className={Styles.error}>{formik.errors.surname}</div>
+                        ) : null}
                     </div>
                 </div>
                 
-                <label htmlFor="formEmail" class="design">Email Address</label>
-                <input 
-                    type="email" 
-                    id="formEmail" 
-                    name='formEmail' 
-                    placeholder="e.g. stephenking@lorem.com" 
-                    onChange={formik.handleChange} 
-                    value={formik.values.formEmail}
-                />
+                <div className={Styles.formControl}>
+                    <label htmlFor="formEmail" class="design">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="formEmail" 
+                        name='formEmail' 
+                        placeholder="e.g. stephenking@lorem.com" 
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        value={formik.values.formEmail}
+                    />
+                    { formik.touched.formEmail && formik.errors.formEmail ? (
+                        <div className={Styles.error}>{formik.errors.formEmail}</div>
+                    ) : null}
+                </div>
 
-                <label htmlFor="formPhone">PHONE NUMBER</label>
-                <input 
-                    type="number" 
-                    id="formPhone" 
-                    name='formPhone' 
-                    placeholder="e.g. +1 234 567 890" 
-                    onChange={formik.handleChange} 
-                    value={formik.values.formPhone}
-                />
+                <div className={Styles.formControl}>
+                    <label htmlFor="formPhone">PHONE NUMBER</label>
+                    <input 
+                        type="number" 
+                        id="formPhone" 
+                        name='formPhone' 
+                        placeholder="e.g. +1 234 567 890" 
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        value={formik.values.formPhone}
+                    />
+                    { formik.touched.formPhone && formik.errors.formPhone ? (
+                        <div className={Styles.error}>{formik.errors.formPhone}</div>
+                    ) : null}
+                </div>
+
             </form>
         </div>
     </div>

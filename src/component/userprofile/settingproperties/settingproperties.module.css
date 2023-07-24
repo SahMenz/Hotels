@@ -70,12 +70,17 @@ input[type="text"]{
     display: block;
     min-width:200px;
     width: 30vw;
-    max-width: 300px;
+    max-width: 500px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-weight: 700;
-    margin: 0 0 20px;
+    margin: 0 0 30px;
+}
+.error{
+    color: red;
+    margin-bottom: 30px;
+    margin-top: -20px;
 }
 .dividednames{
     display: flex;
