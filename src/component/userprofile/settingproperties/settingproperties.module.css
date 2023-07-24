@@ -57,6 +57,7 @@
     color: #f3f3f3;
     font-size: 9vw;
     cursor: pointer;
+    text-align: center;
 }
 .settingform{
     display: flex;
