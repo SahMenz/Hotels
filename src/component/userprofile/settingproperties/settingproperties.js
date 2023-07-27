@@ -3,7 +3,7 @@ import Styles from '../settingproperties/settingproperties.module.css'
 import IconsReactjs  from 'icons-reactjs';
 // import nikelogo from '../../../images/nikelogo.png'
 import { useFormik } from 'formik';
-
+// import * as yup from 'yup'
 
 const initialValues = {
     firstname: '',
@@ -40,12 +40,21 @@ const validate = values => {
     return errors
 }
 
+// const validateSchema = yup.object({
+//     firstname: yup.string().required('Required'),
+//     surname: yup.string().required('Required'),
+//     formEmail: yup.string()
+//         .email('Invalid email address')
+//         .required('Required'),
+//     formPhone: yup.number().required('Required')
+// })
 
 function Settingproperties() {
 
     const formik = useFormik ({
         initialValues,
         onSubmit,
+        // validateSchema
         validate
     })
 
@@ -58,19 +67,19 @@ function Settingproperties() {
                 {/* <img src={nikelogo} alt="" /> */}
             </div>
             <div className={Styles.avatarcredentialsnames}>
-                {/* <h1 className={Styles.usersname}>{firstname} {lastname}</h1> */}
+                <h1 className={Styles.usersname}>{formik.values.firstname} {formik.values.surname}</h1>
                 <h3 className={Styles.gmail}>
                     <IconsReactjs 
                     icon={'email'}
                     fontSize={'2rem'} 
                     color={'#6B705C'}
-                    /></h3>
+                    />{formik.values.formEmail}</h3>
                 <h3 className={Styles.phonenumber}>
                     <IconsReactjs 
                     icon={'call'} 
                     fontSize={'2rem'} 
                     color={'#6B705C'}
-                    /></h3>
+                    />{formik.values.formPhone}</h3>
             </div>
             <div className={Styles.avatarupload}>Upload new avatar</div>
         </div>

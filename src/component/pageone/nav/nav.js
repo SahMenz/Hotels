@@ -51,7 +51,7 @@ function Nav() {
           <li className="lister"><NavLink to='/explore' className="explorer">Explore</NavLink></li>
           <li className="lister"><NavLink to='/learn' className="explorer">Learn</NavLink></li>
           <li className="lister"><NavLink to='/support' className="explorer">Support</NavLink></li>
-          <NavLink to='/login' className="explorer"><li className="lister listerone">Log in</li></NavLink>
+          <NavLink to='/userlogin' className="explorer"><li className="lister listerone">Log in</li></NavLink>
           <li className="lister"><img src={tie} alt="#" /></li>
           <li className="lister"><img src={plus} alt="#" /></li>
         </ul>

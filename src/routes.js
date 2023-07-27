@@ -6,13 +6,15 @@ import Desktopone from "./component/desktopone/desktoponecompiler/desktoponecomp
 import Error from "./component/404";
 import Usersetting from "./component/userprofile/usersettings/usersetting";
 import Userprofile from "./component/userprofile/userprofile/userprofile";
+import Login from "./component/userprofile/login/login";
 
 const routes = [
     { path: '/', element: <Apptrying />, errorElement: <Error></Error>},
     { path: '/explore', element: <Apptrying />, errorElement: <Error></Error>},
     // { path: '/explore', element: <Userprofile />, errorElement: <Error></Error>},
-    { path: '/login', element: <Userprofile />, errorElement: <Error></Error>},
-    { path: '/account', element: <Userprofile />, errorElement: <Error></Error>},
+    { path: '/userlogin', element: <Login />, errorElement: <Error></Error>},
+    // { path: '/login', element: <Userprofile />, errorElement: <Error></Error>},
+    { path: '/account', el7ement: <Userprofile />, errorElement: <Error></Error>},
     { path: '/settings', element: <Usersetting />, errorElement: <Error></Error>},
     { path: '/learn', element: <Learncompiler />},
     { path: '/support', element: <Supportcompiler />},
