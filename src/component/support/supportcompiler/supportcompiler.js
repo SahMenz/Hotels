@@ -7,15 +7,18 @@ import styles from './supportcompiler.module.css'
 import { articles } from '../../data'
 import { hillstour } from '../../data'
 import { hotelquestions } from '../../data'
+import { Fade } from 'react-awesome-reveal';
 
 function Supportcompiler() {
   return (
-    <div className={styles.general}>
-        <Nav />
-        <Hellothere />
-        <Article differentarticle={articles} hillstour={hillstour} hotelquestions={hotelquestions} />
-        <Footer />
-    </div>
+    <Fade delay ={500}>
+      <div className={styles.general}>
+          <Nav />
+          <Hellothere />
+          <Article differentarticle={articles} hillstour={hillstour} hotelquestions={hotelquestions} />
+          <Footer />
+      </div>
+    </Fade>
   )
 }
 

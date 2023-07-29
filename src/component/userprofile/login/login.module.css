@@ -5,45 +5,29 @@
     padding: 0;
     box-sizing: border-box;
 }
-.general{
-    background-color: #ccc;
-}
-input[type="password"],
-input[type="email"]{
-    min-width:200px;
-    width: 24vw;
-    max-width: 500px;
-    font-weight: 700;
-    border: 2px solid #FFB901;
-    border-radius: 30px;
-    padding: 14px;
-    margin-top: -10px;
-}
-.container{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 50px;
+.generalContainer{
     font-family: 'Raleway', sans-serif;
-    background-color: white;
-    max-width: 500px;
-    border-radius: 20px;
-    padding:50px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.31);
-    width: 27vw;
-    min-width:220px ;
-    margin: 10px;
-    margin: auto;
-    margin-top: 50px;
-
+    background-color: #ccc;
+    padding:50px 20px;
+    border-radius: 20px;
+    max-width: 450px;
+    margin: 20px;
 }
+.textfieldStyles{
+    max-width: 500px;
+    border-radius: 30px;
+    margin-top: 15px !important;
+}
+
 .login{
     font-size: 14vw;
     font-weight: 700;
-    margin-bottom: 2.6rem;
     color: #FFB901;
-    font-family: 'Raleway', sans-serif;
+    margin-bottom: 30px;
 }
 .submitbutton{
     padding: 10px;
@@ -52,24 +36,28 @@ input[type="email"]{
     border-radius: 40px;
     font-weight: 700;
     font-size: 8vw;
-    /* max-width: 800px; */
     width: 13vw;
     min-width: 150px;
-    margin-top: 2.6rem;
+    margin-top: 1.5rem;
     cursor: pointer;
+    max-width: 200px;
 }
-.formfill{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.errorMsg{
+    margin-top: 3px;
+    margin-bottom: 5px;
+    margin-left: 12px;
 }
 @media screen and (min-width: 468px) {
     .login{
         font-size: 70px;
-        margin-bottom: 50px;
     }
     .submitbutton{
         font-size: 30px;
+    }
+}
+@media screen and (min-width: 468px) {
+    .generalContainer{
+        margin: auto;
+        margin-top: 20px;
     }
 }

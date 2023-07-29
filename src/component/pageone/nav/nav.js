@@ -10,6 +10,7 @@ import admit from '../../../images/admit.svg'
 import stroke from '../../../images/stroke.svg'
 import search from '../../../images/search.svg'
 
+
 function Nav() {
 
   const [active, setActive] = useState("side");
